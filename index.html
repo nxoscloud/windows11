@@ -15,10 +15,35 @@
   <link rel="stylesheet" href="assets/index-a2e1220e.css">
   <link rel="manifest" href="manifest.webmanifest">
   <script id="vite-plugin-pwa:register-sw" src="registerSW.js"></script>
+
+  <figure id="deskbrowser" onclick="executeProgram('msedge')">
+                    <!-- <button onclick = "OCBROWSER()" id = "browserbtn" class = "Iconshell"> -->
+                                    <img src="src/icons/edge.svg" alt="Microsoft Edge Icon">
+                                                    <figcaption class="iconName">Microsoft Edge</figcaption>
+                                                                    <!-- </button> -->
+                                                                                </figure>
 </head>
 
 <body>
 
+  <script>
+    $(function () {
+        $(".resizable").draggable();
+          $(".resizable").resizable({
+              handles: "n,s,w,e",
+                });
+                });
+
+                function OCBROWSER() {
+                  var BROWSER = document.getElementById("browser");
+
+                    if (BROWSER.style.display === "none") {
+                        BROWSER.style.display = "block";
+                          } else {
+                              BROWSER.style.display = "none";
+                                }
+                                }
+  </script>
   <script type="module" crossorigin src="assets/index-a3a1c0d0.js"></script>
 </body>
 
